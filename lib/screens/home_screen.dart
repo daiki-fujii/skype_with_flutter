@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/pageviews/chat_list_screen.dart';
+import 'package:flutter_app/screens/pageviews/chat_list_screen.dart';
 import 'package:flutter_app/utils/universal_variables.dart';
 
 class HomeScreen extends StatefulWidget {

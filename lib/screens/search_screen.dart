@@ -6,6 +6,8 @@ import 'package:flutter_app/resources/firebase_repository.dart';
 import 'package:flutter_app/utils/universal_variables.dart';
 import 'package:flutter_app/widgets/custom_tile.dart';
 
+import 'chatscreens/chat_screen.dart';
+
 class SearchScreen extends StatefulWidget {
   @override
   _SearchScreenState createState() => _SearchScreenState();
@@ -109,7 +111,17 @@ class _SearchScreenState extends State<SearchScreen> {
 
         return CustomTile(
           mini: false,
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ChatScreen(
+                  receiver: searchedUser,
+
+                )
+              )
+            );
+          },
           leading: CircleAvatar(
             backgroundImage: NetworkImage(searchedUser.profilePhoto),
             backgroundColor: Colors.grey,

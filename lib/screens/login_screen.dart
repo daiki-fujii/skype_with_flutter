@@ -4,7 +4,6 @@ import 'package:flutter_app/resources/firebase_repository.dart';
 import 'package:flutter_app/screens/home_screen.dart';
 import 'package:flutter_app/utils/universal_variables.dart';
 import 'package:shimmer/shimmer.dart';
-import 'package:flutter_app/utils/universal_variables.dart';
 
 class LoginScreen extends StatefulWidget {
   @override

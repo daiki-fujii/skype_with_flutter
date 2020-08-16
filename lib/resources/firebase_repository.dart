@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter_app/models/user.dart';
 import 'package:flutter_app/resources/firebase_methods.dart';
 
 class FirebaseRepository {
@@ -13,4 +14,6 @@ class FirebaseRepository {
   Future<void> addDataToDb(FirebaseUser user) => _firebaseMethods.addDataToDb(user);
 
   Future<void> signOut() => _firebaseMethods.signOut();
+
+  Future<List<User>> fetchAllUsers(FirebaseUser user) => _firebaseMethods.fetchAllUsers(user);
 }
